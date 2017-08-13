@@ -1,3 +1,3 @@
 # AutoGrow
-Automated indoor gardening system
+Automated indoor gardening system <br>
 Sensor Driven with Web interface
