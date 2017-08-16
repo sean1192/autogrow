@@ -1,0 +1,281 @@
+/*-- HTML --*/
+
+html {
+	display: block;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+	-ms-text-size-adjust: 100%;
+	-ms-overflow-style: scrollbar;
+
+}
+
+html[Attributes Style] {
+	-webkit-locale: "en";
+	min-height: 100%;
+}
+
+/*-- Body --*/
+
+body {
+	display: block;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	background-color: #fff;
+	margin: 0;
+
+	/* Workaround for some mobile browsers */
+    background-image:url('https://www.dealfuel.com/wp-content/uploads/2015/06/color5.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height:100%;
+}
+
+.h2, h2 {
+	font-size: 2rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+
+	margin-bottom: .5rem;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+	margin-top: 0;
+	margin-bottom: .5rem;
+
+}
+
+h2 {
+
+	display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 100%;
+	margin-top: 10%;
+}
+
+.form-signin {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+	border-style: solid;
+	border-width: 5px;
+	font-size: 120%;
+
+}
+
+form {
+	display: block;
+}
+
+.form-signin .form-signin-heading, .form-signin .checkbox {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.sr-only {
+
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	white-space: nowrap;
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	border: 0;
+
+}
+
+label {
+	display: inline-block;
+	margin-bottom: .5rem;
+}
+
+[role=button], a, area, button, input, label, select, summary, textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+[role=button], a, area, button, input, label, select, summary, textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    -webkit-user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border: 2px inset;
+}
+
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 11px BlinkMacSystemFont;
+}
+
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+
+input[type="checkbox" i] {
+    -webkit-appearance: checkbox;
+    box-sizing: border-box;
+}
+
+input[type="radio" i], input[type="checkbox" i] {
+    background-color: initial;
+    margin: 3px 0.5ex;
+    padding: initial;
+    border: initial;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-signin .checkbox {
+	font-weight: normal;
+}
+
+.form-signin .form-signin-heading, .form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: black;
+    border-color: #007bff;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    border-radius: .25rem;
+    transition: all .15s ease-in-out;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+
+button, select {
+    text-transform: none;
+}
+
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border: 2px outset buttonface;
+}
+
