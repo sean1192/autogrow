@@ -1,276 +1,301 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/docs/3.3/favicon.ico">
+<html lang="en">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>AutoGrow: Basil Stats</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet"
-  href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-    <link rel="stylesheet"
-  href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+		<title>AutoGrow: Basil Stats</title>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="./Dashboard_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet"
+	  href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+		<link rel="stylesheet"
+	  href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
 
-    <!-- Custom styles for this template -->
-    <link href="./Dashboard_files/dashboard.css" rel="stylesheet">
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<link href="./Dashboard_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-  </head>
+		<!-- Custom styles for this template -->
+		<link href="./Dashboard_files/dashboard.css" rel="stylesheet">
 
-  <body>
+ 	</head>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" >AutoGrow</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            
-            <li><a href="https://getbootstrap.com/docs/3.3/examples/dashboard/#">Dashboard</a></li>
-            
-            <li><a href="https://getbootstrap.com/docs/3.3/examples/dashboard/#">Settings</a></li>
-            
-            <li><a href="https://getbootstrap.com/docs/3.3/examples/dashboard/#">Profile</a></li>
-            
-            <!-- Toggle the 'helpModal' found at bottom of page -->
-            <li><a href="#helpModal" data-toggle="modal">Help</a></li>
+ 	<body>
 
-          </ul>
-        </div>
-      </div>
-    </nav>
+		<!-- Top Navbar -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		  
+			<div class="container-fluid">
 
-    <div class="container-fluid">
-      <div class="row row-offcanvas row-offcanvas-left">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" >AutoGrow</a>
+				</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+				
+					<li><a href="https://getbootstrap.com/docs/3.3/examples/dashboard/#">Dashboard</a></li>
+					
+					<li><a href="https://getbootstrap.com/docs/3.3/examples/dashboard/#">Settings</a></li>
+					
+					<li><a href="https://getbootstrap.com/docs/3.3/examples/dashboard/#">Profile</a></li>
+					
+					<!-- Toggle the 'helpModal' found at bottom of page -->
+					<li><a href="#helpModal" data-toggle="modal">Help</a></li>
 
-        <div id="sidebar" class="col-sm-3 col-md-2 sidebar-offcanvas"></div>
+				</ul>
+			</div>
 
-        <div class="col-sm-3 col-md-2 sidebar">
+		  </div><!-- Close container-fluid -->
 
-          <h4 class="boxHeader">Sean's Box</h4>
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="https://getbootstrap.com/docs/3.3/examples/dashboard/#">Basil <span class="sr-only">(current)</span></a></li>
-            <li><a href="https://getbootstrap.com/docs/3.3/examples/dashboard/#">Parsley</a></li>
-            <li><a href="https://getbootstrap.com/docs/3.3/examples/dashboard/#">Chives</a></li>
-            <li><a href="https://getbootstrap.com/docs/3.3/examples/dashboard/#">Northern Lights</a></li>
-            <li><a href="https://getbootstrap.com/docs/3.3/examples/dashboard/#" class="newPlant">+ Add New Plant</a></li>
-          </ul>
-        </div>
+		</nav><!-- Close Top Navbar -->
 
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+		<div class="container-fluid">
 
-        <!-- Toggle sidebar button -->
-        <p class="visible-xs">
-          <button class="btn btn-primary btn-xs" type="button" data-toggle="offcanvas">
-            <i class="glyphicon glyphicon-chevron-left"></i>
-          </button>
-        </p>
+			<div class="row row-offcanvas row-offcanvas-left">
 
-          <h1 class="page-header">Basil Stats</h1>
+				<!-- Sidebar -->
+				<div id="sidebar" class="col-sm-3 col-md-2 sidebar-offcanvas" role="navigation">
 
-          <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>15</h4>
-              <span class="text-muted">Days Since Planted</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Sprout</h4>
-              <span class="text-muted">Growth Stage</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>6 Hours 23 Minutes</h4>
-              <span class="text-muted">Last Watering</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>48%</h4>
-              <span class="text-muted">Soil Moisture</span>
-            </div>
-          </div>
+					<h4 class="boxHeader">Sean's Box</h4>
+					<ul class="nav nav-sidebar">
+						<li class="active"><a href="https://getbootstrap.com/docs/3.3/examples/dashboard/#">Basil <span class="sr-only">(current)</span></a></li>
+						<li><a href="https://getbootstrap.com/docs/3.3/examples/dashboard/#">Parsley</a></li>
+						<li><a href="https://getbootstrap.com/docs/3.3/examples/dashboard/#">Chives</a></li>
+						<li><a href="https://getbootstrap.com/docs/3.3/examples/dashboard/#">Tomatoes</a></li>
+						<li><a href="https://getbootstrap.com/docs/3.3/examples/dashboard/#" class="newPlant">+ Add New Plant</a></li>
+					</ul>
 
-          <h2 class="sub-header">Historical Data</h2>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Time</th>
-                  <th>Temperature (°C)</th>
-                  <th>Humidity (%)</th>
-                  <th>Soil Moisture (%)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>August 15, 2017</td>
-                  <td>14:45:30</td>
-                  <td>23.5</td>
-                  <td>62</td>
-                  <td>35</td>
-                </tr>
-                <tr>
-                  <td>August 16, 2017</td>
-                  <td>06:56:21</td>
-                  <td>24.75</td>
-                  <td>65</td>
-                  <td>78</td>
-                </tr>
-                <tr>
-                  <td>August 17, 2017</td>
-                  <td>14:12:35</td>
-                  <td>25.93</td>
-                  <td>67.89</td>
-                  <td>70</td>
-                </tr>
-                <tr>
-                  <td>August 18, 2017</td>
-                  <td>07:13:32</td>
-                  <td>27.87</td>
-                  <td>62.08</td>
-                  <td>64</td>
-                </tr>
-                <tr>
-                  <td>August 19, 2017</td>
-                  <td>dapibus</td>
-                  <td>diam</td>
-                  <td>Sed</td>
-                  <td>nisi</td>
-                </tr>
-                <tr>
-                  <td>August 20, 2017</td>
-                  <td>Nulla</td>
-                  <td>quis</td>
-                  <td>sem</td>
-                  <td>at</td>
-                </tr>
-                <tr>
-                  <td>August 21, 2017</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-                <tr>
-                  <td>August 22, 2017</td>
-                  <td>sagittis</td>
-                  <td>ipsum</td>
-                  <td>Praesent</td>
-                  <td>mauris</td>
-                </tr>
-                <tr>
-                  <td>August 23, 2017</td>
-                  <td>Fusce</td>
-                  <td>nec</td>
-                  <td>tellus</td>
-                  <td>sed</td>
-                </tr>
-                <tr>
-                  <td>August 24, 2017</td>
-                  <td>augue</td>
-                  <td>semper</td>
-                  <td>porta</td>
-                  <td>Mauris</td>
-                </tr>
-                <tr>
-                  <td>August 25, 2017</td>
-                  <td>massa</td>
-                  <td>Vestibulum</td>
-                  <td>lacinia</td>
-                  <td>arcu</td>
-                </tr>
-                <tr>
-                  <td>August 26, 2017</td>
-                  <td>eget</td>
-                  <td>nulla</td>
-                  <td>Class</td>
-                  <td>aptent</td>
-                </tr>
-                <tr>
-                  <td>August 27, 2017</td>
-                  <td>taciti</td>
-                  <td>sociosqu</td>
-                  <td>ad</td>
-                  <td>litora</td>
-                </tr>
-                <tr>
-                  <td>August 28, 2017</td>
-                  <td>torquent</td>
-                  <td>per</td>
-                  <td>conubia</td>
-                  <td>nostra</td>
-                </tr>
-                <tr>
-                  <td>August 29, 2017</td>
-                  <td>per</td>
-                  <td>inceptos</td>
-                  <td>himenaeos</td>
-                  <td>Curabitur</td>
-                </tr>
-                <tr>
-                  <td>August 30, 2017</td>
-                  <td>sodales</td>
-                  <td>ligula</td>
-                  <td>in</td>
-                  <td>libero</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
+				</div><!-- End Sidebar -->
 
-    <!-- 'Help' modal HTML -->
-    <div id="helpModal" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">Need a Hand?</h4>
-          </div>
+				<!-- Main window -->
+				<div class="col-sm-9 col-md-10 main">
 
-          <div class="modal-body">
-            <p>This is a cool spot to put some stuff</p>
-          </div>
+					<!-- Toggle sidebar button -->
+					<p class="visible-xs">
+						<button class="btn btn-primary btn-xs" type="button" data-toggle="offcanvas">
+							<i class="glyphicon glyphicon-chevron-left"></i>
+						</button>
+					</p>
 
-          <div class="modal-footer">
-            <p>Footer</p>
-          </div>
+					<!-- Main window header -->
+					<h1 class="page-header">Basil</h1>
 
-        </div>
-      </div>
+					<!-- Summary Stats Section -->
+					<div class="row placeholders">
 
-    </div>
+						<div class="col-xs-6 col-sm-3 placeholder text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+							<h4>15</h4>
+							<span class="text-muted">Days Since Planted</span>
+						</div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript"
-  src="http://code.jquery.com/jquery.min.js"></script>
-  <script type="text/javascript"
-  src="Dashboard_files/dashboard.js"></script>
-  <script
-  src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./Dashboard_files/ie10-viewport-bug-workaround.js"></script>
-  
+						<div class="col-xs-6 col-sm-3 placeholder text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+							<h4>Sprout</h4>
+							<span class="text-muted">Growth Stage</span>
+						</div>
 
-</body></html>
+						<div class="col-xs-6 col-sm-3 placeholder text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+							<h4>6 Hours 23 Minutes</h4>
+							<span class="text-muted">Last Watering</span>
+						</div>
+
+						<div class="col-xs-6 col-sm-3 placeholder text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+							<h4>48%</h4>
+							<span class="text-muted">Soil Moisture</span>
+						</div>
+
+					</div><!-- End Summary Stats Section -->
+
+					<hr>
+
+					<!-- Historical data table -->
+					<h2 class="sub-header">Historical Data</h2>
+					<div class="table-responsive">
+						<table class="table table-striped">
+
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Time</th>
+									<th>Temperature (°C)</th>
+									<th>Humidity (%)</th>
+									<th>Soil Moisture (%)</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>Date</td>
+									<td>Time</td>
+									<td>Temp</td>
+									<td>Humidity</td>
+									<td>Moisture</td>
+								</tr>
+
+								<tr>
+									<td>Date</td>
+									<td>Time</td>
+									<td>Temp</td>
+									<td>Humidity</td>
+									<td>Moisture</td>
+								</tr>
+
+								<tr>
+									<td>Date</td>
+									<td>Time</td>
+									<td>Temp</td>
+									<td>Humidity</td>
+									<td>Moisture</td>
+								</tr>
+
+								<tr>
+									<td>Date</td>
+									<td>Time</td>
+									<td>Temp</td>
+									<td>Humidity</td>
+									<td>Moisture</td>
+								</tr>
+
+								<tr>
+									<td>Date</td>
+									<td>Time</td>
+									<td>Temp</td>
+									<td>Humidity</td>
+									<td>Moisture</td>
+								</tr>
+
+								<tr>
+									<td>Date</td>
+									<td>Time</td>
+									<td>Temp</td>
+									<td>Humidity</td>
+									<td>Moisture</td>
+								</tr>
+
+								<tr>
+									<td>Date</td>
+									<td>Time</td>
+									<td>Temp</td>
+									<td>Humidity</td>
+									<td>Moisture</td>
+								</tr>
+
+								<tr>
+									<td>Date</td>
+									<td>Time</td>
+									<td>Temp</td>
+									<td>Humidity</td>
+									<td>Moisture</td>
+								</tr>
+
+								<tr>
+									<td>Date</td>
+									<td>Time</td>
+									<td>Temp</td>
+									<td>Humidity</td>
+									<td>Moisture</td>
+								</tr>
+
+								<tr>
+									<td>Date</td>
+									<td>Time</td>
+									<td>Temp</td>
+									<td>Humidity</td>
+									<td>Moisture</td>
+								</tr>
+
+								<tr>
+									<td>Date</td>
+									<td>Time</td>
+									<td>Temp</td>
+									<td>Humidity</td>
+									<td>Moisture</td>
+								</tr>
+
+								<tr>
+									<td>Date</td>
+									<td>Time</td>
+									<td>Temp</td>
+									<td>Humidity</td>
+									<td>Moisture</td>
+								</tr>
+
+								<tr>
+									<td>Date</td>
+									<td>Time</td>
+									<td>Temp</td>
+									<td>Humidity</td>
+									<td>Moisture</td>
+								</tr>
+							</tbody>
+
+						</table>
+					</div><!-- End Historical data table -->
+
+				</div><!-- End Main window -->
+
+			</div><!-- End Row -->
+
+		</div><!-- End container -->
+
+		<footer>
+			<p class="pull-right">©2017 AutoGrow</p>
+		</footer>
+
+
+		<!-- 'Help' modal HTML -->
+		<div id="helpModal" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<!-- Help Modal Header -->
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Need a Hand?</h4>
+					</div>
+
+					<!-- Help Modal Body -->
+					<div class="modal-body">
+						<p>This is a cool spot to put some stuff</p>
+					</div>
+
+					<!-- Help Modal Footer -->
+					<div class="modal-footer">
+						<p>Footer</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+
+		<script type="text/javascript"
+	  src="http://code.jquery.com/jquery.min.js"></script>
+	  	<script type="text/javascript"
+	  src="Dashboard_files/dashboard.js"></script>
+	  	<script
+	  src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="./Dashboard_files/ie10-viewport-bug-workaround.js"></script>
+
+
+
+
+	</body>
+ </html>
